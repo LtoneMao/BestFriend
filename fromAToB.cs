@@ -2,24 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fromAToB : MonoBehaviour
-{
-    public bool playerEnter = false;
-    public KeyCode interactButton;
-    public GameObject targetPoint;
-    public float speed;
+
 
     // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(interactButton) && playerEnter)
-        {
-            //state
 
         }
 
         
-        // ÒÆ¶¯ÎïÌå
+        // Ã’Ã†Â¶Â¯ÃŽÃ¯ÃŒÃ¥
         transform.position = Vector2.MoveTowards(transform.position, targetPoint.transform.position, speed * Time.deltaTime);
     }
 
@@ -39,3 +29,4 @@ public class fromAToB : MonoBehaviour
         }
     }
 }
+
